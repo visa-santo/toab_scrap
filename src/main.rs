@@ -499,12 +499,6 @@ async fn scrape_member(
 
     // ============================================================
     // NAME
-    //
-    // HTML:
-    //
-    // <h2 id="toab-member-name">
-    //     Mr Shiblul Azam Koreshi
-    // </h2>
     // ============================================================
 
     let name_selector =
@@ -528,12 +522,6 @@ async fn scrape_member(
 
     // ============================================================
     // JOB POSITION / DESIGNATION
-    //
-    // HTML:
-    //
-    // <p class="designation">
-    //     Managing Director
-    // </p>
     // ============================================================
 
     let designation_selector =
@@ -557,12 +545,6 @@ async fn scrape_member(
 
     // ============================================================
     // COMPANY NAME
-    //
-    // HTML:
-    //
-    // <p class="company">
-    //     Abakash Parjatan Ltd.
-    // </p>
     // ============================================================
 
     let company_selector =
@@ -586,12 +568,6 @@ async fn scrape_member(
 
     // ============================================================
     // MEMBERSHIP NUMBER
-    //
-    // HTML:
-    //
-    // <dt>Membership Number</dt>
-    // <dd>14</dd>
-    //
     // We use the requested ID as fallback.
     // ============================================================
 
@@ -658,13 +634,6 @@ async fn scrape_member(
 
     // ============================================================
     // ADDRESS
-    //
-    // The TOAB profile has:
-    //
-    // <div class="toab-contact-item">
-    //     <span class="icon">⌂</span>
-    //     <span>"Address..."</span>
-    // </div>
     // ============================================================
 
     let contact_selector =
@@ -731,9 +700,6 @@ async fn scrape_member(
 
     // ============================================================
     // PHONE NUMBERS
-    //
-    // Prefer tel: links because they are much more reliable than
-    // searching the entire page text.
     // ============================================================
 
     let tel_selector =
@@ -810,8 +776,6 @@ async fn scrape_member(
 	
 // ============================================================
 // EMAIL
-//
-// Prefer the actual mailto: href.
 // ============================================================
 
 let mail_selector =
